@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./Bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <header class="bg-dark text-white p-0">
+        <div class="container">
+            <h1 class="text-center mb-1">Rap</h1>
+            <nav class="nav justify-content-center">
+                <a class="nav-link text-white" href="./index.html">Inicio</a>
+                <a class="nav-link text-white" href="./Historia.html">Historia</a>
+                <a class="nav-link text-white" href="./videos.html">Videos</a>
+                <a class="nav-link text-white" href="./form.php">Formulario</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="w-50">
+            <form id="miFormulario" action="form.php" method="post">
+                <div class="mb-3">
+                    <label for="nombre">Nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="apellido">Apellido</label>
+                    <input class="form-control" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono">Teléfono</label>
+                     <input class="form-control" type="text" name="telefono" id="telefono" placeholder="Teléfono">
+                </div>
+                <div class="mb-3">
+                    <label for="edad">Edad</label>
+                    <input class="form-control" type="text" name="edad" id="edad" placeholder="Edad">
+                </div>
+                <div class="mb-3">   
+                    <label for="correo">Correo Electrónico</label>
+                    <input class="form-control" type="email" name="correo" id="correo" placeholder="Correo Electrónico">
+                </div>
+                <div class="mb-3">
+                    <label for="comentario" class="form-label">Comentario</label>
+                    <textarea class="form-control" id="comentario" name="comentario" rows="3" placeholder="Escribe tu comentario"></textarea>
+                </div>
+                <div class="mb-3 text-center">
+                    <button id="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="d-flex justify-content-between align-items-center py-1 bg-light rounded">
+        <div class="d-flex align-items-center">
+            <img src="./assets/img/face.png" alt="" class="me-2">
+            <h4 class="mb-0">@ genero urbano</h4>
+        </div>
+        <div class="d-flex align-items-center">
+            <img src="./assets/img/youtu.png" alt="" class="me-2">
+            <h4 class="mb-0">@ genero urbano</h4>
+        </div>
+        <div class="d-flex align-items-center">
+            <img src="./assets/img/correo.png" alt="" class="me-2">
+            <h4 class="mb-0">@ genero urbano</h4>
+        </div>
+        <div class="d-flex align-items-center">
+            <img src="./assets/img/insta.png" alt="" class="me-2">
+            <h4 class="mb-0">@ genero urbano</h4>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <!-- Incluye el archivo JavaScript externo -->
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
